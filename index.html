@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubaeed's Klick - Professional Photography</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--header section-->
+    <header class="header">
+        <div class="container">
+            <div class="logo">Ubaeed's <span>Klick</span></div>
+            <!-- Removed: Toggle Button for Mobile -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<!--hero section-->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1>Capturing <span>Moments</span> </h1>
+            <p>Professional Photography by Ubaeed</p>
+            <br>
+            <button id="btn"><a href="#contact" >Make a Order</a></button>
+        </div>
+    </section>
+<!--about section-->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="kire">
+            <div class="image">
+                <img src="https://public.youware.com/users-website-assets/prod/4df5af48-8694-4b08-a198-c11f504ff3c0/e70faf0bd5744932ab03f3d56e716dd8.jpg" alt="">
+            </div>
+            <br><br>
+            <div class="modhu">
+            <h2>About Me</h2>
+            <p>I'm Ubaeed, a passionate photographer who believes in capturing the beauty of life's precious moments. With years of experience in various photography styles, I specialize in creating timeless memories that tell your unique story.</p>
+            </div>
+            </div>
+
+                <div class="about-stats">
+                <div class="stat-item">
+                    <div class="stat-icon-wrapper"><i class="fas fa-medal"></i></div>
+                    <p class="stat-number">150+</p>
+                    <p class="stat-description">Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon-wrapper"><i class="fas fa-users"></i></div>
+                    <p class="stat-number">80+</p>
+                    <p class="stat-description">Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon-wrapper"><i class="fas fa-calendar-alt"></i></div>
+                    <p class="stat-number">3+</p>
+                    <p class="stat-description">Years Experience</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon-wrapper"><i class="fas fa-mug-hot"></i></div>
+                    <p class="stat-number">500+</p>
+                    <p class="stat-description">Cups of Coffee</p>
+                </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+<!--portfolio section-->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2>My Portfolio</h2>
+            <p class="section-subtitle">Explore my work across different photography categories</p>
+
+            <div class="filter-buttons">
+                <button class="filter-btn" id="oi"><a href="#" target="_blank">All Photos</a></button>
+                <button class="filter-btn" data-filter="landscape"><a href="#" target="_blank">Landscape</a></button>
+                <button class="filter-btn" data-filter="street"><a href="#" target="_blank">Street Photography</a></button>
+                <button class="filter-btn" data-filter="wedding"><a href="#" target="_blank">Wedding</a></button>
+                <button class="filter-btn" data-filter="portrait"><a href="#" target="_blank">Portrait</a></button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item all landscape">
+                    <img src="images/landscape.jpg" alt="Landscape Photo 1">
+                </div>
+                <div class="portfolio-item all street">
+                    <img src="images/street_cover.jpeg" alt="Street Photo 1">
+                </div>
+                <div class="portfolio-item all wedding">
+                    <img src="images/nature.jpg" alt="Wedding Photo 1">
+                </div>
+                <div class="portfolio-item all portrait">
+                    <img src="images/potrait.jpg" alt="Portrait Photo 1">
+                </div>
+                <div class="portfolio-item all landscape">
+                    <img src="images/rural.jpg" alt="Landscape Photo 2">
+                </div>
+                <div class="portfolio-item all street">
+                    <img src="images/street 2.jpg" alt="Street Photo 2">
+                </div>
+                </div>
+                <div class="view-btn">
+                <button class="nilay"> <p>View More </p>     <div class="div11"><i class="fa-solid fa-arrow-right"></i></div></button>
+
+                </div>
+        </div>
+    </section>
+<!--contact section start-->
+    <section id="contact" class="contact-section">
+
+    <div class="container">
+        <div class="cont-header">
+            <h1>Get In Touch</h1>
+            <p>Ready to capture your special moments? Let's create something beautiful together.</p>
+        </div>
+        <div class="main-div">
+        <div class="div1">
+            <form action="#" method="post">
+
+                <div class="name">
+                <label for="Name">Name</label>
+                   <input type="text" id="name" name="name" required>
+                   </div>
+                   <br>
+
+                   <div class="email">
+                     <label for="email">Email</label>
+                     <input type="email" id="email" name="email"   required>
+                   </div>
+                   <br>
+
+                 <div class="sub">
+                     <label for="subject">Subject</label>
+                       <select id="service" name="service">
+                             <option value="">Select a service</option>
+                             <option value="wedding">Wedding Photography</option>
+                             <option value="portrait">Portrait Sessions</option>
+                             <option value="event">Event Photography</option>
+                             <option value="landscape">Landscape Photography</option>
+                             <option value="other">Other</option>
+                         </select>
+                     </div>
+                     <br>
+                     <label for="messsage">Message</label>
+                     <div class="text-area">
+                           <textarea id="message" name="message" rows="6" style="resize: vertical;width: 100%; background-color:rgb(55 65 81); border: none ; border-radius: 5px;"></textarea>
+                     </div>
+                     <br>
+
+                     <button type="submit" class=" send-message-btn">Send Message</button>
+            </form>
+        </div>
+        <div class="div2">
+
+            <div class="info-item">
+                         <i class="fas fa-envelope"></i>
+                         <span>
+                             <h3>Email</h3> <p>hello@ubaeedslick.com</p></span>
+                     </div>
+
+                     <div class="info-item">
+                         <i class="fas fa-phone-alt"></i>
+                         <span><h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p> </span>
+                     </div>
+
+                     <div class="info-item">
+                         <i class="fas fa-map-marker-alt"></i>
+                         <span><h3>Location</h3>
+                            <p>New York, NY</p> </span>
+                     </div>
+
+                     <div class="follow-me">
+                         <h3>Follow Me</h3>
+                         <div class="social-icons">
+                             <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                             <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                             <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                             <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                         </div>
+
+        </div>
+    </div>
+    </div>
+    </section>
+<!--footer section start-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h3 id="ses">Ubaeed's <span> Klick</span></h3>
+                <p>Capturing life's beautiful moments with passion and creativity.</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Services</h3>
+                <ul>
+                    <li>Wedding Photography</li>
+                    <li>Portrait Sessions</li>
+                    <li>Event Photography</li>
+                    <li>Landscape Photography</li>
+                    <li>Other</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> hello@ubaeedslick.com</li>
+                    <li><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-map-marker-alt"></i> New York, NY</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Ubaeed's Klick. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
