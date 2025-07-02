@@ -668,7 +668,11 @@ background-color: rgb(31 41 55 / 1);
     color: var(--accent-purple);
     transform: translateY(-5px);
 }
-
+hr{
+    width: 80%;
+    margin: 0 auto;
+    opacity: .1;
+}
 .copyright {
     margin-top: 20px;
     font-size: 1.1em;
