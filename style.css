@@ -132,7 +132,7 @@ h2 {
 .hero-section h1 {
     color: #fff;
     font-size: 4.5em;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     line-height: 1.1;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     & span{
@@ -151,7 +151,7 @@ h2 {
     font-size: 1.5em;
     color: #fff;
     opacity: .9;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 #btn {
    color: white;
@@ -652,9 +652,46 @@ hr{
         margin-bottom: 30px;
     }
 
+    /* Fix: about section too tall on mobile */
+    .kire {
+        padding-top: 1.5rem;
+        gap: 1rem;
+    }
+
+    .image img {
+        width: 11rem;
+        height: 11rem;
+        margin-top: 1.5rem;
+        border-width: 0.35rem;
+    }
+
+    .modhu {
+        margin-top: 0.5rem;
+    }
+
+    .about-section h2 {
+        font-size: 2rem !important;
+        margin-bottom: 15px;
+    }
+
     .about-stats {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        margin-top: 30px;
+        padding-top: 25px;
         gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .stat-icon-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+
+    .stat-icon-wrapper i {
+        font-size: 1.8em;
+    }
+
+    .stat-number {
+        font-size: 2em;
     }
 
     .filter-buttons {
@@ -695,12 +732,132 @@ hr{
 }
 
 @media (max-width: 768px) {
+
+
+.header .logo {
+    font-size: 1.3rem;
+}
     .hero-section h1 {
         font-size: 3em;
     }
 
     .hero-section p {
         font-size: 1.2em;
+    }
+
+    /* Fix: hero too tall on mobile */
+    .hero-section {
+        height: auto;
+        min-height: 0;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        background-attachment: scroll;
+    }
+
+    .hero-section .container {
+        margin-top: 0;
+    }
+
+    /* Fix: about section too tall on mobile */
+    .kire {
+        padding-top: 1.5rem;
+        gap: 1rem;
+    }
+
+    .image img {
+        width: 11rem;
+        height: 11rem;
+        margin-top: 0.5rem;      /* was 1.5rem — reduces gap under image */
+        border-width: 0.35rem;
+    }
+
+    .modhu {
+        margin-top: 0.5rem;
+    }
+
+    .about-section h2 {
+        font-size: 2rem !important;
+        margin-bottom: 12px;
+        margin-top:-50px;
+    }
+
+    .about-stats {
+        margin-top: 20px;        /* was 30px */
+        padding-top: 18px;  
+        padding-bottom: 20px;     /* was 25px */
+        gap: 18px;
+    }
+
+    .stat-icon-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+
+    .stat-icon-wrapper i {
+        font-size: 1.8em;
+    }
+
+    .stat-number {
+        font-size: 2em;
+    }
+
+    .about-section p {
+        font-size: 1em;
+        margin-bottom: 15px;     /* was 20px */
+    }
+
+    /* Reduce portfolio section top padding on mobile */
+    .portfolio-section {
+        padding-top: 3rem;       /* was 6.5rem — removes big gap after stats */
+    }
+
+    /* Fix: contact section padding too large on mobile */
+    .cont-header {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .main-div {
+        padding-bottom: 3rem;
+        gap: 2rem;
+    }
+
+    /* Reduce info card padding and spacing on mobile */
+    #mahabur{
+        width: 100%;
+    }
+    .info-item {
+        padding: 0.75rem 1rem;
+        margin-bottom: 0.75rem;
+        gap: 0.75rem;
+  
+    }
+
+    .info-item i {
+        padding: 0.5rem;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        flex-shrink: 0;
+    }
+
+    .info-item h3 {
+        font-size: 0.95rem;
+    }
+
+    .info-item p {
+        font-size: 0.85rem;
+    }
+
+    .follow-me {
+        padding: 0.75rem 1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .follow-me i {
+        padding: 0.5rem;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin-left: 0.3rem;
     }
 
     .stats-grid {
@@ -758,6 +915,79 @@ hr{
     .filter-buttons {
         flex-direction: column;
     }
+
+    /* Hero: extra compact on small phones */
+    .hero-section {
+        padding-top: 85px;
+        padding-bottom: 40px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.2em;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .hero-section p {
+        font-size: 1em;
+        margin-bottom: -8px;
+    }
+
+    /* About/stats: 2-column grid, smaller icons */
+    .image img {
+        width: 9rem;
+        height: 9rem;
+        margin-top: 0;           /* no extra gap under image on tiny screens */
+    }
+
+    .about-section p {
+        font-size: 0.95em;
+        margin-bottom: 10px;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        margin-top: 15px;
+        padding-top: 15px;
+    }
+
+    /* Portfolio top padding on very small screens */
+    .portfolio-section {
+        padding-top: 2.5rem;
+    }
+
+    .stat-icon-wrapper {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 8px;
+    }
+
+    .stat-icon-wrapper i {
+        font-size: 1.4em;
+    }
+
+    .stat-number {
+        font-size: 1.6em;
+    }
+
+    .stat-description {
+        font-size: 0.85em;
+    }
+
+    /* Contact: tighter padding */
+    .cont-header {
+        padding-top: 2.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .cont-header h1 {
+        font-size: 2rem;
+    }
+
+    .main-div {
+        padding-bottom: 2.5rem;
+    }
 }
 
 /* =================================================================== */
@@ -801,40 +1031,69 @@ hr{
         align-items: center;
     }
 
+    /* Compact dropdown: full width, auto height, slides top→bottom */
     .nav-menu {
         position: fixed;
-        top: 0;
+        top: 65px;                  /* sits flush below header */
         left: 0;
         width: 100%;
-        height: 100vh;
-        background-color: rgba(17, 24, 39, 0.95);
-        backdrop-filter: blur(10px);
+        height: auto;               /* only as tall as the links */
+        background-color: rgba(15, 23, 42, 0.92);  /* dark navy, matches site theme */ 
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
         z-index: 1000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transform: translateY(-100%);
-        transition: transform 0.4s ease-in-out;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+        /* slide-down animation */
+        clip-path: inset(0 0 100% 0);
+        opacity: 0;
+        pointer-events: none;
+        transition: clip-path 0.4s cubic-bezier(0.23, 1, 0.32, 1),
+                    opacity 0.35s ease;
+        /* reset old properties */
+        display: block;
+        justify-content: unset;
+        align-items: unset;
+        transform: none;
     }
 
     .nav-menu.active {
-        transform: translateY(0);
+        clip-path: inset(0 0 0% 0);
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
     }
 
     .nav-menu ul {
         flex-direction: column;
-        text-align: center;
-        margin-top: 0;
-        padding-left: 0;
+        text-align: left;
+        margin: 0;
+        padding: 0.3rem 0;
+        width: 100%;
     }
 
     .nav-menu ul li {
-        margin: 20px 0;
+        margin: 0;
+        width: 100%;
+        border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .nav-menu ul li:last-child {
+        border-bottom: none;
     }
 
     .nav-menu ul li a {
-        font-size: 1.8rem;
-        padding: 10px;
+        display: block;
+        width: 100%;
+        font-size: 1.05rem;
+        font-weight: 600;
+        padding: 0.9rem 1.8rem;
+        color: rgba(255,255,255,0.82);
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .nav-menu ul li a:hover {
+        background-color: rgba(129, 140, 248, 0.15);
+        color: rgb(129 140 248);
     }
 }
 
